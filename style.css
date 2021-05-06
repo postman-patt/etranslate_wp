@@ -1,0 +1,395 @@
+/*
+Theme Name: Etranslate WP Theme
+Author: Patrick Vuong
+Author URI: http://etranslate.com.au
+Description: eTranslate Theme
+Version: 2.0
+*/
+
+/* Global */
+
+@font-face {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3{
+  font-weight: 300!important;
+  font-family: 'Open Sans';
+}
+
+h1, h2, h3, h4, p, li, a{
+  -webkit-font-smoothing:antialiased !important;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.004) !important;
+  font-family: 'Open Sans';
+}
+
+.seperator{
+  border-top:1px solid #eeb330;
+  margin: 30px 0px 30px 0px;
+}
+
+.content-block-odd{
+  background-color: #efefef;
+}
+
+html,body{
+    overflow-x: hidden;
+}
+
+/* Media Queries*/
+
+@media (max-width: 576px) {
+  .dropdown-menu {
+      -webkit-column-count: 1!important;
+      -moz-column-count: 1!important;
+      column-count: 1!important;
+      column-rule: 2px solid #ffffff;
+    }
+    
+  .fixed-top{
+    position: absolute!important;
+    }
+}
+
+@media (max-width: 1200px) {
+  .opac{
+    background: #ffffff!important;
+  }
+}
+
+@media (min-width: 1200px) {
+.dropdown:hover .dropdown-menu {
+    display: block;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+}
+
+/* Animations */
+
+@keyframes box-up {
+  from {
+    position: relative;
+    top: 100px;
+  }
+  to {
+    position: relative;
+    top: 0px;
+  }
+}
+
+.is-visible{
+  animation-name: box-up;
+  animation-duration:1s;
+}
+
+/* Navbars */
+
+.opac{
+  background: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.7));
+}
+
+.top-navbar{
+  font-size: 12px;
+  margin-right: 20px;
+  height:20px;
+}
+
+.top-navbar a{
+margin:0px;
+padding: 0px;
+}
+
+.top-navbar li .nav-link:hover{
+background-color: transparent  !important;
+color: #000000 !important;
+}
+
+.navbar-toggler-icon{
+  width: 75px !important;
+  height: 75px !important;
+}
+
+
+.nav-link{
+  margin-right: 20px;
+  padding-left:20px !important;
+  padding-right:20px !important;
+  border-radius: 10px;
+}
+
+.nav-link:hover{
+  color:#23272b!important;
+  background-color: #efefef;
+  transition: background-color 0.3s linear, color 0.2s linear;
+}
+
+.btn{
+  border-radius: 10px;
+  background-color: #eeb330;
+  border: none;
+}
+
+.form-inline{
+  margin:0;
+}
+
+#menu-item-36 a{
+  border-radius: 10px;
+  background-color: #eeb330;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+}
+
+#menu-item-36 a:hover{
+  border-radius: 10px;
+  background-color: #23272b;
+  border: none;
+  color: #ffffff!important;
+  transition: 0.5s;
+}
+
+
+.dropdown-menu{
+  margin: 0px;
+  border:0px;
+}
+
+/* Services List tiems styling */
+
+.dropdown-menu {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    column-rule: 2px solid #ffffff;
+}
+
+#menu-item-200 a, #menu-item-217 a{
+  font-weight: 600;
+}
+
+#menu-item-200 a:hover, #menu-item-217 a:hover{
+  background-color: #fafafa;
+}
+
+/* Jumbotron */
+
+.main{
+  margin-top:210px;
+  background-color: #ffffff;
+}
+
+.front-jumbotron h1{
+  color: #ffffff;
+  font-size:70px;
+  padding-bottom:20px;
+}
+
+.front-jumbotron p{
+  color:#ffffff;
+  font-size: 20px;
+  line-height: 1.5em;
+  padding-bottom:20px;
+  padding-top:20px;
+}
+
+.page-heading{
+  margin-bottom:-28px;
+  font-size:150px;
+  color:#ffffff;
+}
+
+.front-jumbotron button{
+  background: none !important;
+  border:2px solid #ffffff;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-right:30px;
+  font-size: 16px;
+}
+
+.front-jumbotron button:hover{
+  background-color: #23272b!important;
+  border:2px solid #23272b;
+  transition: 0.5s;
+}
+
+/* Font-page boxes */
+
+.boxes{
+padding-top: 50px;
+padding-bottom: 50px;
+background:#fff;
+}
+
+.box{
+  padding:30px;
+  border-radius: 10px;
+  background-color: #efefef;
+  height: 100%;
+}
+
+.box h3{
+  text-align:center;
+  padding-bottom: 20px;
+}
+
+.box img{
+  width: 80px;
+  height:auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top:20px;
+  margin-bottom:30px;
+}
+
+/* Main Content */
+
+.content-block{
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.content-block h2{
+  text-align: center;
+}
+.content h2, p, li{
+  line-height: 2em;
+}
+
+/* Client Showcase */
+
+.client-showcase{
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.client-showcase h2{
+  font-size: 50px;
+  margin-bottom:50px;
+  text-align: center;
+}
+
+/* Tagline */
+.tagline{
+  background-color: #eeb330;
+}
+
+.tagline p{
+  color:#ffffff;
+  font-size: 18px;
+  line-height: 1.5em;
+}
+
+.tagline button{
+  border:2px solid #ffffff;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.tagline button:hover{
+  border:2px solid #23272b;
+  background-color: #23272b;
+  transition: 0.5s;
+}
+
+.tagline2{
+  margin-top: 50px;
+  margin-bottom:50px;
+}
+
+.tagline2 img{
+  width: 200px;
+  height: auto;
+}
+
+.tagline2 p{
+  font-size:18px;
+}
+
+/* Footer */
+
+footer{
+  background-color: #eeb330;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  color:#ffffff;
+}
+
+.footer-col-1 p, .footer-col-2 p{
+  font-size: 14px;
+  line-height: 1.5em;
+  margin-top: 20px;
+}
+
+.footer-col-1 h4{
+  font-size: 18px;
+  margin-top: 20px;
+  line-height: 1.5em;
+}
+
+.footer-col-1 h4 strong{
+  font-size: 20px;
+}
+
+.footer-col-1 .btn{
+  border: 2px solid #ffffff;
+  margin-top: 15px;
+}
+
+.footer-col-1 .btn:hover{
+  border:2px solid #23272b;
+  transition: 0.5s;
+}
+
+.sticky-footer{
+  padding-top: 20px;
+  padding-bottom:20px;
+  font-size: 14px;
+}
+/* Sample Work Boxes */
+
+
+.blocks-gallery-item__caption{
+  display:none;
+}
+
+.blocks-gallery-item img{
+  opacity: 0.5;
+}
+
+.blocks-gallery-item:hover .blocks-gallery-item__caption{
+  display: block;
+}
+
+.blocks-gallery-item img:hover{
+  opacity: 1;
+}
+
+/* Quick Update Area */
+.update-area{
+  background-color: #23272b;
+  padding-top:10px;
+  padding-bottom:10px;
+  color: #fafafa;
+}
+.update-area p{
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom:0px;
+}
+
+/* Jotform */
+
+.main-quote-section{
+  min-height:1200px;
+  margin-top:210px;
+  background-color: #eeb330;
+}
+
+.form{
+  margin-top:20px;
+  margin-bottom:20px;
+}
